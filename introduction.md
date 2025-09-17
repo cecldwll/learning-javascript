@@ -24,10 +24,10 @@
 
 ### Weak Typing
 - JavaScript is weakly typed, so you don’t have to declare data types explicitly; it figures out the type from context.
-- Through *type coercion*, JavaScript automatically converts values between types (like turning numbers into strings when combined), and you can also convert them explicitly if needed.
+- Through *type coercion*, JavaScript automatically converts values between types (like turning numbers into strings when combined), and you can also convert them explicitly if needed (ex. JavaScript's built-in `toString` method).
 
 ### Case Sensitivity
-- JavaScript is fully case sensitive, meaning that you must always capitalize everything consistently, from the roperties and methods build into the language to the identifiers you define yourself.
+- JavaScript is fully case sensitive, meaning that you must always capitalize everything consistently, from the properties and methods built into the language to the identifiers you define yourself.
 
 ### Whitespace
 - JavaScript is whitespace insensitive, meaning the interpreter ignores the amount and type (tabs or spaces) of whitespace used.
