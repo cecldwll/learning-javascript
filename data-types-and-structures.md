@@ -51,15 +51,42 @@ Variables are containers that store values of any data type. Variables that stor
         - It's case-sensitive: `Infinity` works, but `infinity` is not defined.
 
 ## Strings
+- Any set of characters —letters, numbers, symbols, and so on— between a set of either double quotation marks (`"`), single quotation marks (`'`), or backticks (`) is a string primtive.
+- A string literal is the written representation of a string primitive in code, created by enclosing characters in quotation marks.
+- In other words: a string literal is the syntax, while a string primitive is the actual value stored in memory, and a string object is the object wrapper around a string primitive.
 
+### String Object
+- When called as a function, the `String` object coerces a specified value to a string literal.
+
+### Concatentation
+- When used in the context of string instead of numbers, a single plus sign (`+`) acts as a concatenation operator, combining multiple string values into a single string.
+
+### String Literals and Template Literals
+- Single quotes, double quotes, and backticks can be used interchangeably for creating string primitives.
+- You can also use backticks to specify *template literals* which allow for multi-line strings and string interpolation.
+- Tempalte literals can contain placeholder expressions marked by a dollar sign and curly braces (`${}`).
+- These placeholders are 'interpolated' by default, meaning that the result of the expression replaces the placeholder in the final string.
 
 ## Booleans
+- The boolean primitive is a logical data type with only two values: `true` and `false`.
+- Values that result in `false` include `0`, `null`, `undefined`, `NaN`, and empty string (`""`), an ommitted values, and a `false` boolean. All other values result in `true`.
+- Avoid using the `Boolean` object as a constructor as it creates an object instead of a simple true/false value —and that object will always act like `true` even if it contains `false`.
 
 
 ## Null and Undefined Values
+- Javascript has multiple ways of indicating the absence of a value; the two most common being the `null` and `undefined` data types.
+- In the strictest sense, `null` represents a value intentionally defined as 'blank', and `undefined` represents a lack of any assigned value.
+
+### null
+- The `null` keyword represents an intentionally defined absense of value.
+- `null` is a primitive, although the `typeof` operator returns that `null` is an object. (This is a error that has been around since the first version of JavaScript)
+
+### undefined
+- `undefined` is a primitive value assigned to variables that have just been declared, or to the resulting value of an operation that doesn't return a meaningful value.
 
 
 ## BigInt
+-   
 
 
 ## Symbols
